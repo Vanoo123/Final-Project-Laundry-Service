@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Final_Project</title>
+</head>
+
+<body>
+    <i class="fas fa-circle-arrow-up" id="scroll-to-top-btn"></i>
+
+    <section class="first_section" id="home">
+        <div class="container">
+            <div class="topbar_wrapper">
+                <div class="topbar flex">
+                    <div class="topbar_box flex">
+                        <div class="topbar_time flex">
+                            <i class="fas fa-clock cyan"></i>
+                            <p>08:00 AM - 08:00 PM</p>
+                        </div>
+                        <div class="topbar_phone flex">
+                            <i class="fas fa-square-phone cyan"></i>
+                            <p>( +62 ) 123 456 789</p>
+                        </div>
+                        <div class="topbar_apps flex">
+                            <a href="/Weather-app/index.html" target="_blank">Weather-app</a>
+                            <a href="/Form-page/index.html" target="_blank">Form-page</a>
+                        </div>
+                    </div>
+                    <div class="topbar_social">
+                        <a href="#"><i class="fab fa-facebook-square cyan"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square cyan"></i></a>
+                        <a href="#"><i class="fab fa-linkedin cyan"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square cyan"></i></a>
+                    </div>
+                </div>
+            </div>
+            <header class="navbar header_wrapper">
+                <div class="site_logo">
+                    <a href="#"><i class="fas fa-hands-bubbles cyan"></i>Lauria</a>
+                </div>
+                <nav class="desktop_nav">
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#servicess">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class=" mobile_burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="hide mobile_menu" id="mobile">
+                    <nav class="mobile_nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="button_box">
+                    <div class="button">
+                        <p>Get a Quote</p>
+                    </div>
+                </div>
+            </header>
+            <div class="text_box hidden">
+                <h1>
+                    More Clean More Fragrant With Our Laundry
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="white_bgc_features">
+            <div class="container flex features_wrapper space_between">
+                <div class="features_box flex">
+                    <div class="icon_box flex">
+                        <i class="fas fa-hands-bubbles cyan"></i>
+                        <h3>Fullhand Clean</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="icon_box flex">
+                        <i class="fas fa-hand-holding-medical cyan"></i>
+                        <h3>Sanitizer Sterils</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="form_box">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form_style" name="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" class="form_style" name="address" placeholder="Your Address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telephone" class="form_style" name="telephone" placeholder="Telephone"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <select id="services" name="services" class="form_style">
+                                <option value="first">Choose Services</option>
+                                <option value="second">Service 1</option>
+                                <option value="third">Service 2</option>
+                                <option value="fourth">Service 3</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Get Reservation" class="form_submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second_section" id="about-us">
+        <div class="container">
+            <div class="about_wrapper">
+                <div class="about_video">
+                    <div class="video-container">
+                        <video id="video" src="videos/video.mp4" autoplay muted></video>
+                        <button id="play-pause-btn" class="play-pause-btn"><i class="fa fa-pause"></i></button>
+                    </div>
+                </div>
+                <div class="about_text">
+                    <span>
+                        ABOUT US
+                    </span>
+                    <h2>
+                        We Are Best Choicing Laundry Services For You
+                    </h2>
+                    <p class="first_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua
+                    </p>
+                    <div class="second_text_box">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="icon_list flex">
+                        <div class="first_list">
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                        </div>
+                        <div class="second_list ">
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Best Worker Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third_section">
+        <div class="archivements">
+            <div class="container flex archivements_wrapper">
+                <div class="archivments_left flex hidden">
+                    <span>
+                        OUR STATS
+                    </span>
+                    <h1>
+                        Our Business Number
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua
+                    </p>
+                </div>
+                <div class="archivments_right flex hidden">
+                    <div class="arch_box_one">
+                        <h2>
+                            30 +
+                        </h2>
+                        <h3>
+                            Our Branch
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                    <div class="arch_box_one">
+                        <h2>
+                            150 +
+                        </h2>
+                        <h3>
+                            Team Member
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth_section" id="servicess">
+        <div class="container">
+            <div class="services_wrapper">
+                <div class="services_title">
+                    <span>
+                        OUR SERVICES
+                    </span>
+                    <h1>
+                        We Do Laundry Services
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
+                </div>
+                <div class="service_cards">
+                    <div class="card">
+                        <i class="fas fa-hands-bubbles cyan"></i>
+                        <h3>Dry Clean</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <h3>One Day Fast</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.
+                        </p>
+                    </div>
+                    <div class="card special_card">
+                        <i class="fas fa-hand-sparkles cyan"></i>
+                        <h3>All In Laundry</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fifth_section">
+        <div class="container">
+            <div class="map">
+                <div class="branch">
+                    <i class="fas fa-store"></i>
+                    <i class="fas fa-store"></i>
+                    <i class="fas fa-store"></i>
+                    <i class="fas fa-store"></i>
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sixth_section">
+        <div class="container">
+            <div class="why_us_wrapper flex">
+                <div class="why_us_title">
+                    <span>
+                        WHY CHOICE US
+                    </span>
+                    <h1>
+                        We Can Be Best Solution For Your Laundry Service
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
+                    <div class="icon_list">
+                        <div class="flex">
+                            <i class="fas fa-circle-check cyan"></i>
+                            <p>Best Worker Services</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fas fa-circle-check cyan"></i>
+                            <p>Best Worker Services</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fas fa-circle-check cyan"></i>
+                            <p>Best Worker Services</p>
+                        </div>
+                    </div>
+                    <div class="why_buttons flex">
+                        <input type="submit" value="Contact Us">
+                        <button class="why_play_button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <p>
+                            Play Video
+                        </p>
+                    </div>
+                </div>
+                <div class="why_cards_box">
+                    <div class="why_card">
+                        <i class="fas fa-star"></i>
+                        <div class="why_card_text">
+                            <h2>The Best Laundry</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="why_card">
+                        <i class="fas fa-umbrella"></i>
+                        <div class="why_card_text">
+                            <h2>Rain Free</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="why_card">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <div class="why_card_text">
+                            <h2>One Day Services</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seventh_section" id="pricing">
+        <div class="container">
+            <div class="pricing_wrapper">
+                <div class="pricing_title">
+                    <span>
+                        OUR PRICING
+                    </span>
+                    <h1>
+                        Best Price For Best Services
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
+                </div>
+                <div class="pricing_cards">
+                    <div class="prc_card">
+                        <h2>
+                            Dry Clean
+                        </h2>
+                        <span>Price For / 5 Kg</span>
+                        <h1>$15</h1>
+                        <div class="pricing_list">
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Clean Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Fragnant Bonusess</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Free Packaging</p>
+                            </div>
+                            <div class="flex not-cyan">
+                                <i class="fas fa-circle-xmark"></i>
+                                <p>Extra Delivery</p>
+                            </div>
+                            <div class="flex not-cyan">
+                                <i class="fas fa-circle-xmark"></i>
+                                <p>Iron Clothes</p>
+                            </div>
+                            <div class="flex not-cyan">
+                                <i class="fas fa-circle-xmark"></i>
+                                <p>Priority Services</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Lets Talk Us" class="talk_us">
+                    </div>
+                    <div class="prc_card second_card">
+                        <div class="recomended">
+                            <p>Recomended</p>
+                        </div>
+                        <h2>
+                            One Day Fast
+                        </h2>
+                        <span>Price For / 5 Kg</span>
+                        <h1>$35</h1>
+                        <div class="pricing_list">
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Clean Services</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Fragnant Bonusess</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Free Packaging</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Extra Delivery</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Iron Clothes</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-circle-check cyan"></i>
+                                <p>Priority Services</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Lets Talk Us" class="talk_us">
+                    </div>
+                    <div class="prc_card special_card">
+                        <div>
+                            <h2>
+                                All In Laundry
+                            </h2>
+                            <span>Price For / 5 Kg</span>
+                            <h1>$19</h1>
+                            <div class="pricing_list">
+                                <div class="flex">
+                                    <i class="fas fa-circle-check cyan"></i>
+                                    <p>Clean Services</p>
+                                </div>
+                                <div class="flex">
+                                    <i class="fas fa-circle-check cyan"></i>
+                                    <p>Fragnant Bonusess</p>
+                                </div>
+                                <div class="flex">
+                                    <i class="fas fa-circle-check cyan"></i>
+                                    <p>Free Packaging</p>
+                                </div>
+                                <div class="flex">
+                                    <i class="fas fa-circle-check cyan"></i>
+                                    <p>Extra Delivery</p>
+                                </div>
+                                <div class="flex not-cyan">
+                                    <i class="fas fa-circle-xmark"></i>
+                                    <p>Iron Clothes</p>
+                                </div>
+                                <div class="flex not-cyan">
+                                    <i class="fas fa-circle-xmark"></i>
+                                    <p>Priority Services</p>
+                                </div>
+                            </div>
+                            <input type="submit" value="Lets Talk Us" class="talk_us">
+                        </div>
+
+                    </div>
+                </div>
+    </section>
+
+    <section class="seventh_section">
+        <div class="seventh_background">
+            <div class="container">
+                <div class="progresbar_wrapper">
+                    <div class="my-video-box">
+                        <div class="seventh_video_container">
+                            <video id="myvideo" src="videos/video.mp4" autoplay muted></video>
+                            <button id="play-pause-button" class="play-pause-button"><i
+                                    class="fa fa-pause"></i></button>
+                        </div>
+                    </div>
+                    <div class="progres_bar_box">
+                        <span>OUR TEAM SKILL</span>
+                        <h1>We Have Great Team Skill With Certification</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <div class="progres_bar">
+                            <div class="first_bar_box">
+                                <div class="bar_title">
+                                    <h4>Hand Cleaning</h4>
+                                    <p>92%</p>
+                                </div>
+                                <div class="first_bar">
+                                    <div class="first_blue">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second_bar_box">
+                                <div class="bar_title">
+                                    <h4>Fast Services</h4>
+                                    <p>98%</p>
+                                </div>
+                                <div class="first_bar">
+                                    <div class="second_blue">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eighth_section">
+        <div class="container">
+            <div class="testimonial_wrapper">
+                <div class="testimonial_title">
+                    <span>
+                        Testimonial
+                    </span>
+                    <h1>
+                        Best Feedback From Clients
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="stars_box">
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star low"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="slide_image">
+                                    <img src="./images/person.png" alt="person_image">
+                                    <div class="slide_title">
+                                        <p>Mr. John Doe</p>
+                                        <span>Reviews On Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ninth_section" id="contact-us">
+        <div class="container">
+            <div class="contact_us">
+                <div class="stay_tuned">
+                    <span>Stay Tuned</span>
+                    <h1>Keep Connected & Lets Get In Touch With Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
+                    <div class="contact_icons">
+                        <div class="contact_icon_box">
+                            <i class="fas fa-location-dot cyan size_font"></i>
+                            <div class="contact_text">
+                                <h4>Head Office Address</h4>
+                                <span>Lumbung Hidup Street Madiun City East Java</span>
+                            </div>
+                        </div>
+                        <div class="contact_icon_box">
+                            <i class="fas fa-envelope cyan size_font"></i>
+                            <div class="contact_text">
+                                <h4>Email Address</h4>
+                                <span>Hello@Lauria.com</span>
+                            </div>
+                        </div>
+                        <div class="contact_icon_box">
+                            <i class="fas fa-square-phone cyan size_font"></i>
+                            <div class="contact_text">
+                                <h4>Office Telephone</h4>
+                                <span>( +62 ) 123 456 789</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <div class="second_form_title">
+                        <span>Fill This Form</span>
+                        <h2>Leave a Message For Us & Get Text Back</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <form class="second_form">
+                        <div class="second_form_group">
+                            <input type="text" name="firstname" class="form_style" placeholder="First Name" required>
+                        </div>
+                        <div class="second_form_group">
+                            <input type="text" name="lastname" class="form_style" placeholder="Last Name" required>
+                        </div>
+                        <div class="second_form_group">
+                            <input type="email" name="email" class="form_style" placeholder="Email Address" required>
+                        </div>
+                        <div class="second_form_group">
+                            <input type="text" name="subject" class="form_style" placeholder="Subject">
+                        </div>
+                        <div class="second_form_group textarea_special">
+                            <textarea name="message" id="textarea" class="text_area"
+                                placeholder="Your Message Here ..."></textarea>
+                        </div>
+                    </form>
+                    <input type="submit" value="Send Message" class="second_form_submit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tenth_section">
+        <div class="footer_background">
+            <div class="tenth_section_background">
+
+            </div>
+            <div class="container">
+                <footer>
+                    <div class="footer_left_box">
+                        <div class="footer_site_logo">
+                            <a href="#"><i class="fas fa-hands-bubbles white"></i>Lauria</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <div class="footer_social">
+                            <a href="#"><i class="fab fa-facebook-square white"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square white"></i></a>
+                            <a href="#"><i class="fab fa-linkedin white"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square white"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer_middle_box">
+                        <h2>Navigation</h2>
+                        <a href="#home">Homepage</a>
+                        <a href="#about-us">About Us</a>
+                        <a href="#servicess">Our Services</a>
+                        <a href="#pricing">Our Pricing</a>
+                        <a href="#">Join Us</a>
+                    </div>
+                    <div class="footer_right_box">
+                        <h2>Our Newslater</h2>
+                        <p>Subscribe Our Newslater to get New Update & Big Discount Sale.</p>
+                        <input type="email" class="form_style" placeholder="Email Address" required>
+                        <input type="submit" value="Subscribe Now" class="second_form_submit footer_input">
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+
+        const burger = document.getElementById('burger')
+        const mobile = document.getElementById('mobile')
+
+        burger.addEventListener('click', () => {
+            mobile.classList.toggle('show')
+            mobile.classList.toggle('hide')
+            burger.classList.toggle('damn')
+        })
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('flow');
+                } else {
+                    entry.target.classList.remove('flow');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        const video = document.getElementById("video");
+        const playPauseBtn = document.getElementById("play-pause-btn");
+
+        playPauseBtn.addEventListener("click", function () {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+            }
+        });
+
+
+
+        var myvideo = document.getElementById("myvideo");
+        var playPauseButton = document.getElementById("play-pause-button");
+
+        playPauseButton.addEventListener("click", function () {
+            if (myvideo.paused) {
+                myvideo.play();
+                playPauseButton.innerHTML = "<i class='fa fa-pause'></i>";
+            } else {
+                myvideo.pause();
+                playPauseButton.innerHTML = "<i class='fa fa-play'></i>";
+            }
+        });
+
+        var scrollToTopBtn = document.getElementById("scroll-to-top-btn");
+        var rootElement = document.documentElement;
+
+        function handleScroll() {
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            if ((rootElement.scrollTop / scrollTotal) > 0.20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+    </script>
+</body>
+
+</html>
