@@ -36,10 +36,10 @@ search.addEventListener('click', () => {
 
             switch (json.weather[0].main) {
                 case 'Clear':
-                    image.src = '../Final-Project-Laundry-Service/Weather-app/images/day.svg'
+                    image.src = '../Weather-app/images/day.svg'
                     break;
                 case 'Rain':
-                    image.src = '../Final-Project-Laundry-Service/Weather-app/images/rainy-5.svg'
+                    image.src = '../Weather-app/images/rainy-5.svg'
                     break;
                 case 'Snow':
                     image.src = '../Final-Project-Laundry-Service/Weather-app/images/snowy-6.svg'
