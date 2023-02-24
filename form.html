@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form-page/styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="image">
+
+        </div>
+        <div class="form-box">
+            <div class="container">
+                <div class="form-title">
+                    <div class="toggle-btn">
+                        <h1>Signup</h1>
+                        <button onclick="toggleDarkenElements()" class="fas fa-moon icn nightbtn"></button>
+                    </div>
+                    <p>There is no charge upon registration!</p>
+                </div>
+                <form>
+                    <div class="form-email">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-country">
+                        <label>Country</label>
+                        <select id="country" required>
+                            <option value="" selected>Select a country</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                        <span class="change-text"></span>
+                    </div>
+                    <div class="city-and-zip">
+                        <div class="city">
+                            <label>City</label>
+                            <input type="text" id="city" placeholder="Tbilisi" required>
+                        </div>
+                        <div class="zipcode">
+                            <label>Zip Code</label>
+                            <input type="number" id="zip" placeholder="00001" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="signbtn">Signup Now</button>
+                </form>
+                <p id="message"></p>
+                <div class="social-icons">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/" target="_blank">Signup with Facebook</a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/" target="_blank">Signup with Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/ecf95206cf.js" crossorigin="anonymous"></script>
+
+    <script>
+        const emailInput = document.getElementById('email');
+        const emailErrorMessage = 'Please enter a valid email address.';
+
+        function isEmailValid(email) {
+            // regular expression to validate email format
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+
+        function validateEmail() {
+            const email = emailInput.value.trim();
+
+            if (!isEmailValid(email)) {
+                emailInput.setCustomValidity(emailErrorMessage);
+            } else {
+                emailInput.setCustomValidity('');
+            }
+        }
+
+        emailInput.addEventListener('input', validateEmail);
+        const form = document.querySelector('form');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // get the form field values
+            const email = emailInput.value.trim();
+            const country = document.getElementById('country').value;
+            const city = document.getElementById('city').value.trim();
+            const zip = document.getElementById('zip').value.trim();
+
+            // create an object with the field values
+            const user = {
+                email,
+                country,
+                city,
+                zip
+            };
+
+            // store the user object in an array
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(user);
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // display success message
+            message.textContent = 'Successfully sent!';
+            message.classList.add('success');
+            console.log(users);
+        });
+
+        const zipInput = document.getElementById('zip');
+        const zipErrorMessage = 'Please enter a valid zip code.';
+
+        function isZipValid(zip) {
+            const regex = /^\d{5}$/;
+            return regex.test(zip);
+        }
+
+        function validateZip() {
+            const zip = zipInput.value.trim();
+
+            if (!isZipValid(zip)) {
+                zipInput.setCustomValidity(zipErrorMessage);
+            } else {
+                zipInput.setCustomValidity('');
+            }
+        }
+
+        zipInput.addEventListener('input', validateZip);
+
+        var darkened = false; // Track whether the elements are currently darkened
+
+        function toggleDarkenElements() {
+            // Get references to the elements to be darkened
+            var textEl = document.querySelector('.form-title h1');
+            var inputEls = document.querySelectorAll('input');
+            var placeHolder = document.querySelectorAll('placeholder');
+            var selectEl = document.querySelector('select');
+            // var labeEls = document.querySelectorAll('label');
+            var boxColor = document.querySelector('.form-box')
+            var smallBoxColor = document.querySelector('form')
+            var icon = document.querySelector('.icn')
+            var image = document.querySelector('.image')
+
+            // Toggle the 'dark' class on each element
+            if (darkened) {
+                smallBoxColor.classList.remove('smallboxdark');
+                boxColor.classList.remove('boxdark');
+                textEl.style.color = '#31394D';
+
+                inputEls.forEach(function (inputEl) {
+                    inputEl.classList.remove('smallboxdark');
+                });
+                placeHolder.forEach(function (holder) {
+                    holder.classList.remove('light')
+                })
+
+                selectEl.classList.remove('smallboxdark');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                icon.style.color = '#00adee';
+                icon.style.border = '1px solid #1f2327';
+                image.style.backgroundImage = "url('../images/Illustration.svg')";
+                darkened = false;
+            } else {
+                smallBoxColor.classList.add('smallboxdark');
+                boxColor.classList.add('boxdark');
+                textEl.style.color = '#fff';
+
+                inputEls.forEach(function (inputEl) {
+                    inputEl.classList.add('smallboxdark');
+                });
+                placeHolder.forEach(function (holder) {
+                    holder.classList.add('light')
+                })
+                selectEl.classList.add('smallboxdark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                icon.style.color = '#FFE87C';
+                icon.style.border = '1px solid #fff';
+                image.style.backgroundImage = "url('../images/Illustration2.svg')";
+                darkened = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
