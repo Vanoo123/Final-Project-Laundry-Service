@@ -149,7 +149,7 @@ html {
   align-items: center;
   gap: 20px;
   color: #2d2d2d;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .button {
@@ -1433,7 +1433,7 @@ footer {
   align-items: center;
   gap: 20px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .footer_right_box {
